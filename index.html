@@ -1,1 +1,169 @@
 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PAF-IAST | One Page University Site</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+      defer
+    ></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="hero" id="home">
+      <nav class="navbar">
+        <a class="brand" href="#home">
+          <img
+            src="https://paf-iast.edu.pk/wp-content/uploads/2021/06/cropped-PAF-IAST-logo-1.png"
+            alt="PAF-IAST logo"
+            onerror="this.src='https://dummyimage.com/120x120/0c1d4f/ffffff&text=PAF-IAST'"
+          />
+          <span>PAF-IAST</span>
+        </a>
+
+        <button class="menu-btn" id="menuBtn" aria-label="Toggle menu">☰</button>
+
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#about">About</a></li>
+          <li><a href="#academics">Academics</a></li>
+          <li><a href="#admissions">Admissions</a></li>
+          <li><a href="#campus">Campus Life</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="hero-content">
+        <p class="eyebrow">Pakistan Air Force Institute of Aviation Technology</p>
+        <h1>Shape Your Future in Engineering, Computing & Aviation Innovation</h1>
+        <p>
+          Welcome to PAF-IAST. Explore quality academics, industry-focused programs, and a vibrant
+          university experience in a modern one-page format.
+        </p>
+        <a href="#academics" class="btn">Explore Programs</a>
+      </div>
+    </header>
+
+    <main>
+      <section id="about" class="section about">
+        <div class="container">
+          <h2>About PAF-IAST</h2>
+          <p>
+            PAF-IAST is committed to preparing students for leadership and innovation through
+            technology-focused education. This one-page site is structured to highlight key
+            university information in a modern format.
+          </p>
+          <div class="stats">
+            <article>
+              <h3>10+</h3>
+              <p>Academic Programs</p>
+            </article>
+            <article>
+              <h3>Modern</h3>
+              <p>Labs & Facilities</p>
+            </article>
+            <article>
+              <h3>Career Focused</h3>
+              <p>Practical Learning</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="academics" class="section academics">
+        <div class="container">
+          <h2>Academics</h2>
+          <p>Undergraduate programs designed for future-ready professionals.</p>
+          <div class="program-grid">
+            <article class="card">
+              <h3>BS Computer Science</h3>
+              <p>Software engineering, AI fundamentals, and modern computing practices.</p>
+            </article>
+            <article class="card">
+              <h3>BS Software Engineering</h3>
+              <p>Build scalable applications with strong design, testing, and deployment skills.</p>
+            </article>
+            <article class="card">
+              <h3>BS Cyber Security</h3>
+              <p>Learn security operations, digital forensics, and cyber defense strategies.</p>
+            </article>
+            <article class="card">
+              <h3>BS Aviation Management</h3>
+              <p>Leadership and operational knowledge for aviation and allied sectors.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="admissions" class="section admissions">
+        <div class="container two-col">
+          <div>
+            <h2>Admissions</h2>
+            <p>
+              Admissions are open for motivated students who want to pursue quality higher
+              education. Check eligibility criteria, application timelines, and scholarship options.
+            </p>
+            <a class="btn" href="#contact">Get Admission Guidance</a>
+          </div>
+          <img
+            src="https://paf-iast.edu.pk/wp-content/uploads/2021/06/paf-iast-slider.jpg"
+            alt="PAF-IAST campus"
+            onerror="this.src='https://dummyimage.com/800x500/1f2a5a/ffffff&text=PAF-IAST+Campus'"
+          />
+        </div>
+      </section>
+
+      <section id="campus" class="section campus">
+        <div class="container">
+          <h2>Campus Life</h2>
+          <p>
+            Student life at PAF-IAST blends academics, personal development, and community
+            engagement through clubs, events, and project-based learning.
+          </p>
+          <div class="gallery">
+            <img src="https://dummyimage.com/500x320/0f3460/ffffff&text=Innovation+Labs" alt="Innovation labs" />
+            <img src="https://dummyimage.com/500x320/533483/ffffff&text=Student+Activities" alt="Student activities" />
+            <img src="https://dummyimage.com/500x320/16213e/ffffff&text=Career+Development" alt="Career development" />
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact">
+        <div class="container two-col">
+          <div>
+            <h2>Contact</h2>
+            <p>Submit your details to receive a welcome email and admission follow-up.</p>
+            <p class="note">
+              Set your EmailJS keys in <code>script.js</code> for production email delivery.
+            </p>
+          </div>
+
+          <form id="contactForm" class="contact-form">
+            <label>
+              Name
+              <input type="text" name="name" required />
+            </label>
+            <label>
+              Email
+              <input type="email" name="email" required />
+            </label>
+            <label>
+              Contact Number
+              <input type="tel" name="phone" required />
+            </label>
+            <button type="submit" class="btn">Submit</button>
+            <p id="formMessage" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
